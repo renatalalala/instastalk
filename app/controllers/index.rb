@@ -20,16 +20,14 @@ end
 
 post '/homepage' do 
 	user = Instagram.user_search("#{params[:username]}").pop
-	p user.username
 	redirect "/profile/#{user.username}"
 end
 
 get '/instapics' do
-  user = Instagram.client(:access_token => session[:access_token])
-  @user = user.user
+  @client = Instagram.client(:access_token => session[:access_token])
   erb :instapics
 end
-
+ 
 
 get '/profile/:username' do 
 	@user = Instagram.user_search(params[:username]).pop

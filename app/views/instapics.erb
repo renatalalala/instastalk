@@ -1,1 +1,10 @@
-<h3>You should see all pictures here</h3>
+<div id="wallpaper">
+	<h3>Move pictures around and resize from the bottom right hand corner</h3>
+
+		<a href="/homepage">Home</a><br>
+		<%@client.user_recent_media.each do |media_item|%>
+		<div class="resize" style="display:inline-block">
+			<img id="img" src="<%=media_item.images.thumbnail.url%>">
+		</div>
+		<%end%>
+</div>

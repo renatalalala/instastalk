@@ -1,9 +1,40 @@
 .container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+	margin: 20px auto;
+	margin-top: 150px;
+	width: 600px;
+	padding: 0px 20px 20px 20px;
+	text-align: center;
 }
 th {
-  text-align: left;
+	text-align: left;
+}
+
+.resizeDiv {
+	display: inline-block;
+}
+
+#wallpaper {;
+	background-color: black;
+	width:100%;
+	height: 1000px;
+}
+
+h3 {
+	color:white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#img {
+	width: 100%;
+	height: 100%;
+}
+
+input[type="submit"] {
+	border-radius: 5px;
+	background-color: #57d6c7;
+}
+
+#profile {
+	text-align: center
 }
